@@ -1,6 +1,6 @@
-[![Current Release](https://img.shields.io/github/release/mtrab/webastoconnect/all.svg?style=plastic)](https://github.com/mtrab/webastoconnect/releases) [![Github All Releases](https://img.shields.io/github/downloads/mtrab/webastoconnect/total.svg?style=plastic)](https://github.com/mtrab/webastoconnect/releases) [![hacs_badge](https://img.shields.io/badge/HACS-Default-41BDF5.svg?style=plastic)](https://github.com/hacs/integration)
+[![Current Release](https://img.shields.io/github/release/florian-weiss/webastoconnect/all.svg?style=plastic)](https://github.com/florian-weiss/webastoconnect/releases) [![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg?style=plastic)](https://github.com/hacs/integration)
 
-<a href="https://www.buymeacoffee.com/mtrab" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+> **Fork notice:** This is a personally maintained fork of [MTrab/webastoconnect](https://github.com/MTrab/webastoconnect), which was archived by its author in September 2026. All credit for the original work goes to Malene Trab. It is kept running for personal use; it is not in the HACS default list, so add `https://github.com/florian-weiss/webastoconnect` as a custom repository (type *Integration*) in HACS.
 
 This integration provides support for Webasto ThermoConnect devices.
 
@@ -18,7 +18,7 @@ Webasto <b>DOES NOT</b> provide any public API or documentation for it, so I can
 ### Option 1 (easy) - HACS:
 
 - Ensure that HACS is installed.
-- Search for and install the "Webasto Connect" integration.
+- Add `https://github.com/florian-weiss/webastoconnect` as a custom repository (type *Integration*), then search for and install the "Webasto Connect" integration.
 - Restart Home Assistant.
 
 ### Option 2 - Manual installation:

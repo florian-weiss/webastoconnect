@@ -3,7 +3,7 @@ name: HACS validation
 on:
   push:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 4 * * 1"
 
 jobs:
   validate-hacs:

@@ -6,11 +6,19 @@ on:
     branches:
       - main
       - master
+  workflow_dispatch:
+  schedule:
+    # Weekly early warning: run the tests against the newest Home Assistant
+    - cron: "0 5 * * 1"
 
 jobs:
   lint-and-test:
-    name: Lint + Tests (Python 3.14)
+    name: Lint + Tests (${{ matrix.ha }} HA)
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        ha: [pinned, latest]
 
     steps:
       - name: Checkout
@@ -36,6 +44,10 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt
+          if [ "${{ matrix.ha }}" = "latest" ]; then
+            python -m pip install --upgrade homeassistant
+          fi
+          python -m pip show homeassistant | grep -i '^version'
 
       - name: Run Ruff
         run: ruff check .
