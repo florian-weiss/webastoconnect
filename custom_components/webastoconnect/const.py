@@ -7,8 +7,8 @@ Webasto Connect (ThermoConnect)
 
 Version: %s
 This is a custom integration
-If you have any issues with this you need to open an issue here:
-https://github.com/florian-weiss/webastoconnect/issues
+Personal fork without support:
+https://github.com/florian-weiss/webastoconnect
 -------------------------------------------------------------------
 """
 

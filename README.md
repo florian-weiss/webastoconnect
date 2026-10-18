@@ -1,6 +1,6 @@
 [![Current Release](https://img.shields.io/github/release/florian-weiss/webastoconnect/all.svg?style=plastic)](https://github.com/florian-weiss/webastoconnect/releases) [![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg?style=plastic)](https://github.com/hacs/integration)
 
-> **Fork notice:** This is a personally maintained fork of [MTrab/webastoconnect](https://github.com/MTrab/webastoconnect), which was archived by its author in September 2026. All credit for the original work goes to Malene Trab. It is kept running for personal use; it is not in the HACS default list, so add `https://github.com/florian-weiss/webastoconnect` as a custom repository (type *Integration*) in HACS.
+> **Personal fork – no support.** This is a fork of [MTrab/webastoconnect](https://github.com/MTrab/webastoconnect) (archived by its author in September 2026), kept running for my own use only. Issues and pull requests are not accepted and there is no guarantee of updates. All credit for the original work goes to Malene Trab. Feel free to fork it yourself.
 
 This integration provides support for Webasto ThermoConnect devices.
 
